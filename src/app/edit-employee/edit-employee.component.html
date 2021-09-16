@@ -1,0 +1,152 @@
+<div class="bg-light Edit-Container">
+  <h2 align="center">{{Title}}</h2>
+    <table class="my-2" align="center" cellspacing = "2" cellpadding = "2">
+      <tr>
+       <td>ID :</td>
+      <td><input readonly type="number"[(ngModel)]="this.employee.EmployeeId"></td>
+      </tr>
+
+    <tr>
+      <td>First Name:</td>
+      <td><input type="text" [(ngModel)]="this.employee.FName" size="30" InputText required/></td>
+    </tr>
+    <tr>
+      <td>Last Name:</td>
+      <td><input type="text" [(ngModel)]="this.employee.LName" size="30" pInputText required></td>
+    </tr>
+    <tr>
+    <td>Gender:</td>
+    <td><select name="gender" [(ngModel)]="this.employee.Gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select></td>
+    </tr>
+    <tr>
+      <td>DOB:</td>
+      <td><input id="float-input" type="date" size="30" [(ngModel)]="this.employee.DateOfBirth" pInputText required></td>
+    </tr>
+    <tr>
+      <td>DOJ:</td>
+      <td><input type="date" size="30" [(ngModel)]="this.employee.DateJoined" pInputText required></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+     <td><input type="text" [(ngModel)]="this.employee.Email" size="30" pInputText required></td>
+    </tr>
+    <tr>
+      <td>Contact No:</td>
+     <td><input type="number" [(ngModel)]="this.employee.Phone" size="30" pInputText required></td>
+    </tr>
+    <tr>
+      <td>Street:</td>
+      <td><input type="text" [(ngModel)]="this.employee.Street" size="30" pInputText required></td>
+    </tr>
+    <tr>
+      <td>City:</td>
+      <td><input type="text" [(ngModel)]="this.employee.City" size="30" pInputText required></td>
+    </tr>
+    <tr>
+      <td>State:</td>
+      <td><input type="text" [(ngModel)]="this.employee.State" size="30" pInputText required></td>
+    </tr>
+    <tr>
+      <td>ZipCode</td>
+      <td><input type="number" [(ngModel)]="this.employee.ZipCode" size="30" pInputText required></td>
+    </tr>
+    <tr>
+      <td>Job_Title:</td>
+      <td><input type="text" [(ngModel)]="this.employee.Position" pInputText required></td>
+    </tr>
+    <tr>
+    <td>Department:</td>
+    <td><select name="Department" [(ngModel)]="this.employee.DName">
+    <option value="HR">HR</option>
+    <option value="IT">IT</option>
+    <option value="Finance">Finance</option>
+    <option value="Software Dev">Software Dev</option>
+    </select></td>
+    </tr>
+    <br/>
+    <tr>
+    <td class='text-right'>
+    <button class="btn btn-success" (click)="updateEmployee()">Edit</button></td>
+    </tr>
+    </table>
+    </div>
+
+
+    <!-- <div class="bg-light Edit-Container">
+      <h2 align="center">{{Title}}</h2>
+        <table class="my-2" align="center" cellspacing = "2" cellpadding = "2">
+          <tr>
+           <td>ID :</td>
+          <td><input readonly type="number"[(ngModel)]="this.employee.id"></td>
+          </tr>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" [(ngModel)]="this.employee.firstName" size="30" InputText required/></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" [(ngModel)]="this.employee.lastName" size="30" pInputText required></td>
+        </tr>
+        <tr>
+        <td>Gender:</td>
+        <td><select name="gender" [(ngModel)]="this.employee.gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        </select></td>
+        </tr>
+        <tr>
+          <td>DOB:</td>
+          <td><input id="float-input" type="date" size="30" [(ngModel)]="this.employee.dob" pInputText required></td>
+        </tr>
+        <tr>
+          <td>DOJ:</td>
+          <td><input type="date" size="30" [(ngModel)]="this.employee.doj" pInputText required></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+         <td><input type="text" [(ngModel)]="this.employee.email" size="30" pInputText required></td>
+        </tr>
+        <tr>
+          <td>Contact No:</td>
+         <td><input type="number" [(ngModel)]="this.employee.contactNo" size="30" pInputText required></td>
+        </tr>
+        <tr>
+          <td>Street:</td>
+          <td><input type="text" [(ngModel)]="this.employee.street" size="30" pInputText required></td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td><input type="text" [(ngModel)]="this.employee.city" size="30" pInputText required></td>
+        </tr>
+        <tr>
+          <td>State:</td>
+          <td><input type="text" [(ngModel)]="this.employee.state" size="30" pInputText required></td>
+        </tr>
+        <tr>
+          <td>ZipCode</td>
+          <td><input type="number" [(ngModel)]="this.employee.zipCode" size="30" pInputText required></td>
+        </tr>
+        <tr>
+          <td>Job_Title:</td>
+          <td><input type="text" [(ngModel)]="this.employee.position" pInputText required></td>
+        </tr>
+        <tr>
+        <td>Department:</td>
+        <td><select name="Department" [(ngModel)]="this.employee.Department">
+        <option value="HR">HR</option>
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+        <option value="Software Dev">Software Dev</option>
+        </select></td>
+        </tr>
+        <br/>
+        <tr>
+        <td class='text-right'>
+        <button class="btn btn-success" (click)="updateEmployee()">Edit</button></td>
+        </tr>
+        </table>
+        </div>
+     -->
